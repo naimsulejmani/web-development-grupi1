@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
-<hr/>
-<p style="min-width: 800px">Welcome to Home Page</p>
-<hr/>
-<footer>
-    <p>Copyright &copy; 2024</p>
-</footer>
-</body>
-</html>
+<th:block th:insert="~{/shared/_header.html}"></th:block>
 
+<p style="min-height: 500px">Welcome to About Page</p>
 
-
-
+<th:block th:insert="~{/shared/_footer.html}"></th:block>
