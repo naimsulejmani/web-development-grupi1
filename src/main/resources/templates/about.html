@@ -1,5 +1,13 @@
 <th:block th:insert="~{/shared/_header.html}"></th:block>
+<div class="container mt-4">
+    <h1>Welcome to My Website</h1>
+    <p>Welcome to About Page</p>
+    <!--    put the value of th:text into p.innerHTML-->
+    <p th:text="'HELLO ABOUT PAGE'"></p>
+    <p>Name: <b th:text="${name}"></b></p>
+    <p>Age: <b th:text="${age}"></b></p>
+    <p>Date: <b th:text="${date}"></b></p>
+</div>
 
-<p style="min-height: 500px">Welcome to About Page</p>
 
 <th:block th:insert="~{/shared/_footer.html}"></th:block>

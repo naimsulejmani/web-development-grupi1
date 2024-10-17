@@ -1,0 +1,30 @@
+<th:block th:insert="~{/shared/_header.html}"></th:block>
+<div class="container mt-4">
+    <p>Welcome to Stats Page</p>
+    <hr/>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Page</th>
+            <th>Count</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>/</td>
+                <td th:text="${homeCount}"></td>
+            </tr>
+            <tr>
+                <td>/about</td>
+                <td th:text="${aboutCount}"></td>
+            </tr>
+            <tr>
+                <td>/contact</td>
+                <td th:text="${contactCount}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<th:block th:insert="~{/shared/_footer.html}"></th:block>
