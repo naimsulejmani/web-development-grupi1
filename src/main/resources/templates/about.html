@@ -7,6 +7,20 @@
     <p>Name: <b th:text="${name}"></b></p>
     <p>Age: <b th:text="${age}"></b></p>
     <p>Date: <b th:text="${date}"></b></p>
+    <hr/>
+    <h3>Student Data</h3>
+    <p>Id: <b th:text="${student.id}"></b></p>
+    <p>Name: <b th:text="${student.name.toUpperCase()}"></b></p>
+    <p>Surname: <b th:text="${student.surname}"></b></p>
+    <p th:text="${student.toString()}"></p>
+
+    <div th:object="${student}">
+        <p> Id: <b th:text="*{id}"></b></p>
+        <p> Name: <b th:text="*{name}"></b></p>
+        <p> Surname: <b th:text="*{surname}"></b></p>
+    </div>
+
+
 </div>
 
 

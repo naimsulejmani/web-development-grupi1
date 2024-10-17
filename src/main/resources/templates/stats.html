@@ -22,9 +22,30 @@
                 <td>/contact</td>
                 <td th:text="${contactCount}"></td>
             </tr>
+            <tr>
+                <td>/time</td>
+                <td th:text="${timeCount}"></td>
+            </tr>
+            <tr>
+                <td>/stats</td>
+                <td th:text="${statsCount}"></td>
+            </tr>
         </tbody>
+        <tfoot>
+        <tr>
+            <th>Total</th>
+            <td th:text="${homeCount + aboutCount + contactCount + timeCount + statsCount}"></td>
+        </tr>
+        </tfoot>
     </table>
 </div>
+
+
+
+
+
+
+
 
 
 <th:block th:insert="~{/shared/_footer.html}"></th:block>
