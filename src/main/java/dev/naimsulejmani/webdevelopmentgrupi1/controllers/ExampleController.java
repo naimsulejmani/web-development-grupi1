@@ -69,7 +69,29 @@ public class ExampleController {
         return "time";
     }
 
+    // i want new page portfolio
+    @GetMapping("/portfolio")
+    public String portfolio(Model model) {
+        model.addAttribute("pageTitle", "Portfolio Page");
+        return "portfolio";
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
